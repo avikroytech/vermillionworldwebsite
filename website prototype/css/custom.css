@@ -1,0 +1,289 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+#animation {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: moving;
+	animation-duration: 3s;
+}
+
+@keyframes moving {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: blue;
+	}
+}
+
+.footerbg {
+	background-color: var(--bs-gray-700);
+}
+.customtextpeople {
+	color: var(--bs-gray-700)
+}
+.movie-size {
+	height: 300px;
+	width: 300px;
+}
+.vermilliontext {
+	color: rgb(160, 22, 22)
+}
+.customtitle {
+	font-family: "Montserrat";
+	font-weight:bold;
+}
+.custommenu {
+	font-family: "Montserrat";
+}
+.customtext {
+	/* font-family: "Courier Prime", sans-serif; */
+	font-family: "Montserrat", sans-serif;
+}
+.customratingtext {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+.custommetrictext {
+	font-family: "Montserrat", sans-serif;
+	font-size: medium;
+}
+.menu-link-size {
+	font-size: small;
+}
+.morph-marker {
+		--cnvs-morph-height: 3px;
+		--cnvs-morph-duration: .3s;
+		position: absolute;
+		display: block;
+		background: var(--cnvs-themecolor);
+		height: var(--cnvs-morph-height);
+		border-radius: var(--bs-border-radius);
+		transition: all var(--cnvs-morph-duration);
+	}
+	
+.morph-bg .morph-marker {
+	--cnvs-morph-height: 100%;
+	opacity: .1;
+	bottom: 0 !important;
+}
+
+.morph-bg .menu-link {
+		position: relative;
+		--cnvs-primary-menu-padding-y: 11px;
+		--cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
+		z-index: 1;
+	}
+
+	.block-expand-categories h1,
+.block-expand-categories h2,
+.block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+
+.block-expand-categories .expand-category {
+	--height: 50vh;
+	--responsive-height: 60px;
+	--hover-flex: 10;
+
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 20px;
+	margin: 10px 0;
+	min-height: var(--responsive-height);
+	cursor: pointer;
+}
+
+.block-expand-categories .expand-category h4 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0;
+	transform: translateY(-50%);
+}
+
+/* Larger Device */
+@media (min-width: 992px) {
+	.block-expand-categories .expand-category {
+		height: var(--height);
+		flex: 1;
+		margin: 0 10px;
+		transition: flex 1s ease;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		transform: translate3d(0,0,0);
+	}
+
+	.block-expand-categories:not(.on-click) .expand-category:hover,
+	.block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
+
+	.block-expand-categories .expand-category h4 {
+		opacity: 1;
+		top: auto;
+		bottom: 10px;
+		transform: none;
+		transition: opacity .4s ease;
+	}
+
+	.block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
+	.block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
+}
+
+.font-primary { font-family: meno-banner, serif; }
+
+.block-tab-2 .nav-tabs {
+	--bs-nav-tabs-border-width: 0px;
+	--bs-nav-link-color: #111;
+	--bs-nav-link-hover-color: var(--bs-gray);
+}
+
+.block-tab-2 .nav-tabs .nav-item .nav-link {
+	position: relative;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0 0 20px 0;
+}
+
+.block-tab-2 .nav-tabs .nav-item .nav-link i {
+	display: block;
+	font-size: 38px;
+	margin: 0 0 10px 0;
+}
+
+.block-tab-2 .nav-tabs .nav-item .nav-link.active {
+	top: 0;
+}
+
+.block-tab-2 .nav-tabs .nav-item .nav-link.active i {
+	color: var(--bs-warning);
+}
+
+/* .block-tab-2 .nav-tabs .nav-item .nav-link.active::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+	border-radius: 50%;
+	background: var(--bs-danger);
+} */
+.parent-container {
+	display: flex;
+	  align-items: center;
+}
+
+@media (min-width: 992px) {
+	.morph-marker {
+		--cnvs-morph-height: 3px;
+		--cnvs-morph-duration: .3s;
+		position: absolute;
+		display: block;
+		background: var(--cnvs-themecolor);
+		height: var(--cnvs-morph-height);
+		border-radius: var(--bs-border-radius);
+		transition: all var(--cnvs-morph-duration);
+	}
+
+	.morph-bg .morph-marker {
+		--cnvs-morph-height: 100%;
+		opacity: .1;
+		bottom: 0 !important;
+	}
+
+	.morph-bg .menu-link {
+		position: relative;
+		--cnvs-primary-menu-padding-y: 11px;
+		--cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
+		z-index: 1;
+	}
+}
+
+@-webkit-keyframes ticker {
+	0% {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	  visibility: visible;
+	}
+
+	100% {
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  }
+
+  @keyframes ticker {
+	0% {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	  visibility: visible;
+	}
+
+	100% {
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  }
+
+  .ticker-wrap {
+	  --ticker-duration: 10s;
+
+	  width: 100%;
+	  overflow: hidden;
+	  padding-left: 100%;
+	  box-sizing: content-box;
+  }
+
+  .ticker-wrap .ticker {
+	  display: inline-block;
+	  white-space: nowrap;
+	  padding-right: 100%;
+	  box-sizing: content-box;
+	  -webkit-animation: ticker var(--ticker-duration) linear infinite;
+	  animation: ticker var(--ticker-duration) linear infinite;
+  }
+
+  .ticker-wrap .ticker-item {
+	  display: inline-block;
+	  padding: 0 2rem;
+	  font-size: 1.5rem;
+
+  }
+
+  .ticker-wrap.pause-on-hover .ticker:hover {
+	  animation-play-state: paused;
+  }
+
+  a.ticker-item:hover {
+	  text-decoration: underline !important;
+  }
+
+.typewriter {
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid rgb(202, 41, 5); /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+	typing 5s steps(40, end),
+	blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: rgb(202, 41, 5); }
+}

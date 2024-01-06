@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Custom CSS -->
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Ticker | Canvas</title>
+
+	<style>
+		@-webkit-keyframes ticker {
+		  0% {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			visibility: visible;
+		  }
+
+		  100% {
+			-webkit-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		  }
+		}
+
+		@keyframes ticker {
+		  0% {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			visibility: visible;
+		  }
+
+		  100% {
+			-webkit-transform: translate3d(-100%, 0, 0);
+			transform: translate3d(-100%, 0, 0);
+		  }
+		}
+
+		.ticker-wrap {
+			--ticker-duration: 50s;
+
+			width: 100%;
+			overflow: hidden;
+			padding-left: 100%;
+			box-sizing: content-box;
+		}
+
+		.ticker-wrap .ticker {
+			display: inline-block;
+			white-space: nowrap;
+			padding-right: 100%;
+			box-sizing: content-box;
+			-webkit-animation: ticker var(--ticker-duration) linear infinite;
+			animation: ticker var(--ticker-duration) linear infinite;
+		}
+
+		.ticker-wrap .ticker-item {
+			display: inline-block;
+			padding: 0rem;
+			font-size: 1.5rem;
+
+		}
+
+		.ticker-wrap.pause-on-hover .ticker:hover {
+			animation-play-state: paused;
+		}
+
+		a.ticker-item:hover {
+			text-decoration: underline !important;
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap py-0">
+				<div class="section py-6 my-0" style="background-color: #EDF4EA;">
+					<h1 class="text-center mb-5 font-secondary fw-bold">Ticker Pause on Hover</h1>
+					<div class="ticker-wrap pause-on-hover" style=" --ticker-duration: 10s;">
+						<div class="ticker">
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												<!--  -->
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15145764/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=lI3YcNpngCU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												<!--  -->
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15145764/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=lI3YcNpngCU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												<!--  -->
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15145764/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=lI3YcNpngCU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												<!--  -->
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15145764/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=lI3YcNpngCU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+							<img class="ticker-item" src="./static/freddy_poster.jpg" style="height: 30vw; max-width: fit-content;">
+						</div>
+					</div>
+				</div>
+				<div class="section py-6 my-0" style="background-color: brown;">
+					<h1 class="text-center mb-5 font-secondary fw-bold">Working Movie Ticker</h1>
+					<div class="ticker-wrap pause-on-hover">
+						<div class="ticker">
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="">
+										<a href="#">
+											<img src="./static/freddy_poster.jpg" style="height: 30vw; width: 50vh; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-md-12 col-sm-4">
+												<!--  -->
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15145764/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=lI3YcNpngCU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BMDljYWJhN2UtOWI2Mi00NjgzLWIwMWYtMWUxZWU5YWViMjY5XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg" style="height: 30vw; width: 50vh; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt14042066/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_dobaaraa" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">4.8/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=DoAouCAhDW0" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BYjZiMzIzYTctNDViZi00OWNmLWFmN2YtMmI2OWJiZWViMmY3XkEyXkFqcGdeQXVyNTYwMzA0MTM@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt8130968/?ref_=fn_al_tt_1" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.7/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=mSlgu8AQAd4" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BNjY1OTI0NjEtNzRmZS00NzFlLTlhMTgtNjdmNWY2MDQ3YzIwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt9248952/?ref_=nv_sr_srsg_0_tt_5_nm_0_q_JAWAANI%2520JAANEMAN" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">6.5/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=_lkFyfcrvkU" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BZWRmYjM2ODAtZmI0NS00ZTFlLWE2ZTctM2EwMjA1ZDA5ZGJiXkEyXkFqcGdeQXVyODU3OTIzMDM@._V1_FMjpg_UX1000_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt10230404/?ref_=nv_sr_srsg_2_tt_8_nm_0_q_ghost%2520stories" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">4.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=hsab-HJ7kqc" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BZGYwYTQxZWEtYzAwNy00NmM4LWE4MDUtYTU5ZTVmYjY4ZTAwXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt11260832/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_bellbottom" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">6.1/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=A6eZ49O67YQ" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BNTFkNzU3MjEtZjFlMC00OTM3LWE2ZjUtZjViMzk5YjQxYWQ3XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt8130904/?ref_=fn_al_tt_4" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">5.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=4f9jIdg4rTQ" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71tINyZhgwL.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt1891755/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_billa%25202" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">6.1/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=iNx-2R0hJxk" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BMjQxZGMwMTQtZGI2MS00NDI2LWE2OWUtMDA0MzAzZjEyMTgxXkEyXkFqcGdeQXVyNzkyMjU3Mjk@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt23472806/?ref_=nv_sr_srsg_0_tt_1_nm_0_q_almost%2520pyaar" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">4.9/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=CRdDegCYxJM" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://media-cache.cinematerial.com/p/500x/ifigt5qm/yaara-indian-movie-cover.jpg?v=1597425272" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt3698454/?ref_=nv_sr_srsg_6_tt_7_nm_1_q_yaaraa" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">5.9/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=yDpUASu9CYs" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BZWIyN2MzM2QtM2Y4ZS00NjM3LTlmODMtMmU0NDk4Njk3MmI3XkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt3410408/?ref_=nv_sr_srsg_0_tt_3_nm_0_q_rocky%2520handsome" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">6.8/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=mMjPokU5-0w" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BMmMyOTkzM2QtNGQ1NS00Zjk1LTgxYTktNWE1NGJmZTU5MmNhXkEyXkFqcGdeQXVyMTAzNzI0MTM@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt15748830/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">7.0/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=GHX6yT9Lxfo" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://m.media-amazon.com/images/M/MV5BMTgwNTQ4NDAyN15BMl5BanBnXkFtZTgwNjMwMzQ3NTM@._V1_.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt8439854/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">6.4/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=cH4mYC91omg" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="ticker-item">
+								<div class="grid-inner">
+									<div class="portfolio-image">
+										<a href="#">
+											<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/I_Love_You_film_poster.jpg/220px-I_Love_You_film_poster.jpg" style="height: 30vw; max-width: fit-content;">
+										</a>
+										<div class="bg-overlay">
+											<div class="bg-overlay-content dark flex-column col-12">
+												
+												<div class="position-absolute bottom-0 p-5">
+													<div class="row row-cols-2 justify-content-center">
+														<a href="https://www.imdb.com/title/tt27930156/" target="_blank" class="button button-rounded button-reveal button-amber w-100"><i class="fa-solid fa-star"></i><span class="customratingtext">5.6/10</span></a>
+														
+													</div>
+													
+												</div>
+												
+		
+												<div class="d-flex justify-content-center">
+													<a href="https://www.youtube.com/watch?v=x1HXCfxgm0g" class="overlay-trigger-icon bg-warning size-lg scale-lg text-dark align-items-center" data-hover-animate="fadeInUpSmall" data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350" data-lightbox="iframe">
+														<i class="uil uil-play"></i>
+													</a>
+												</div>
+											</div>
+											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+				<div class="section py-6 my-0" style="background-color: #B5D3CE;">
+					<div class="text-center mb-5">
+						<h1 class="mb-2">Ticker Speed</h1>
+						<small class="text-center">--ticker-duration: 20s</small>
+					</div>
+					<div class="ticker-wrap pause-on-hover" style="--ticker-duration: 20s;">
+						<div class="ticker">
+							<a href="#" class="ticker-item text-dark">Furniture Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Real Estate Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">SEO Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Landing Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Construction Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Travel Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Medical Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Hosting Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">App Landing Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Shop Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">News/Magazine Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">CoWorking Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Finance Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Therapy Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Covid Care Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Forums/Community Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Blog Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Yoga Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Freelancer Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Cleaner Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Beauty Kit Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Store Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Hostel Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Crowd-Funding Niche Demo</a>
+							<a href="#" class="ticker-item text-dark">Burger Niche Demo</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+</body>
+</html>

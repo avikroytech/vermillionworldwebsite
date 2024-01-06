@@ -1,0 +1,48 @@
+#animation-service {
+	border: 5px;
+	background-color: rgb(250, 248, 105);
+	border-color: rgb(212, 210, 80);
+}
+  
+  #animation-service:hover {
+	animation: expand;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+  }
+  
+#animation-service {
+	animation: contract;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+}
+  
+  @keyframes expand {
+	from {
+		top: 0%;
+		background-color: rgb(250, 248, 105);
+		border-color: rgb(212, 210, 80);
+		color: black;
+	}
+	to {
+		top: -5%;
+		background-color: rgb(212, 210, 80);
+		border-color: white;
+		color: white;
+	}
+  }
+  
+  @keyframes contract {
+	from {
+		top: -5%;
+		background-color: rgb(212, 210, 80);
+		border-color: rgb(250, 248, 105);
+		color: white;
+	}
+	to {
+		top: 0%;
+		background-color: rgb(250, 248, 105);
+		border-color: rgb(212, 210, 80);
+		color: black;
+	}
+	}
