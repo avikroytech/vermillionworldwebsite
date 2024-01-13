@@ -4,6 +4,10 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+* {  
+	--yellow-color: rgb(250, 248, 105);
+}
+
 #animation {
 	width: 100px;
 	height: 100px;
@@ -25,7 +29,13 @@
 	background-color: var(--bs-gray-700);
 }
 .customtextpeople {
-	color: var(--bs-gray-700)
+	font-family: "Montserrat";
+	font-size: medium;
+	font-weight: bolder;
+	color: var(--bs-gray-700);
+}
+.customyellow-bg {
+	background-color: var(--yellow-color);
 }
 .movie-size {
 	height: 300px;
@@ -37,6 +47,16 @@
 .customtitle {
 	font-family: "Montserrat";
 	font-weight:bold;
+	font-size: 40px;
+}
+.custom-slidertitle {
+	font-size: 65px;
+	font-family: "Montserrat";
+	font-weight: 900;
+}
+.custom-menutitle {
+	font-family: "Montserrat";
+	font-weight: 600;
 }
 .custommenu {
 	font-family: "Montserrat";
@@ -116,7 +136,6 @@
 		margin: 0 10px;
 		transition: flex 1s ease;
 		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
 		transform: translate3d(0,0,0);
 	}
 
@@ -161,7 +180,7 @@
 }
 
 .block-tab-2 .nav-tabs .nav-item .nav-link.active i {
-	color: var(--bs-warning);
+	color: var(--yellow-color);
 }
 
 /* .block-tab-2 .nav-tabs .nav-item .nav-link.active::after {
