@@ -25,6 +25,10 @@
 	}
 }
 
+.img-maxwidth {
+	max-width: fit-content;
+}
+
 .custom-tickercol {
 	overflow: hidden;
     width: 100%;
