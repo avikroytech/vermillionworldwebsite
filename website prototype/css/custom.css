@@ -25,6 +25,17 @@
 	}
 }
 
+.custom-tickercol {
+	overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.movie-imgsize {
+	height: 30vw;
+	max-width: fit-content;
+}
+
 .footerbg {
 	background-color: var(--bs-gray-700);
 }
